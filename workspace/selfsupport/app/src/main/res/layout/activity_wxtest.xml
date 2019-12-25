@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.testDbUi.WXtestActivity">
+
+    <Button
+        android:id="@+id/btn_facepay"
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:text="人脸支付"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_getWxpayfaceRawdata"
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:text="获取数据"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_get_wxpayface_authinfo"
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:text="获取调用凭证（官方）"
+        android:layout_height="wrap_content">
+
+    </Button>
+    <Button
+        android:id="@+id/btn_get_wxpayface_authinfoBy"
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:text="获取调用凭证（哆啦宝）"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_getWxpayfaceUserInfo"
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:text="获取用户信息"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/btn_dogetfacecode"
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:text="获取人脸支付码"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_dogetfacecodeZhiJie"
+        android:layout_marginTop="50px"
+        android:layout_width="match_parent"
+        android:text="获取人脸支付码(直接拿到付款码)"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/et_re"
+        android:layout_marginTop="10px"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:gravity="left|top"
+        android:text=""
+        android:layout_weight="1">
+
+    </EditText>
+
+
+
+</LinearLayout>

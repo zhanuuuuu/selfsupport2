@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_height="220dp"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <RelativeLayout
+        android:id="@+id/Layout_goods_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shadow_corners_rectangle_whith">
+        <!-- 右侧 删除按钮-->
+        <LinearLayout
+            android:id="@+id/item_right_clear"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-40dp"
+            android:layout_marginRight="-40dp"
+            android:background="@drawable/item_right_rectangle_with_corners"
+            android:gravity="bottom|left"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/laji"></ImageView>
+        </LinearLayout>
+
+        <!-- 左侧 椭圆线条 -->
+        <LinearLayout
+            android:id="@+id/item_left_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="9dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-4.5dp"
+                android:background="@drawable/item_left_rectangle_with_corners"></TextView>
+        </LinearLayout>
+
+        <!--商品名称-->
+        <TextView
+            android:id="@+id/item_good_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center"
+            android:maxLength="20"
+            android:text="百事可乐"
+            android:textColor="#393d3d"
+            android:textSize="38px"></TextView>
+
+        <!--商品名称下面的单价 -->
+        <TextView
+            android:id="@+id/item_good_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="left|center"
+            android:maxLength="13"
+            android:text="¥ 5.00"
+            android:textColor="#393d3d"
+            android:textSize="38px"></TextView>
+
+        <!--称重商品这里隐藏-->
+        <LinearLayout
+
+            android:id="@+id/shopitem_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_good_delete"
+                android:layout_width="50.8dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="-0.8dp"
+                android:background="@drawable/bg_item_goods_delete_stroke"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="#DD615A5A"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/item_good_num"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_item_goods_number_stroke"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="209"
+                android:textColor="#393d3d"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/item_good_add"
+                android:layout_width="50.8dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-0.8dp"
+                android:background="@drawable/bg_item_goods_add_stroke"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="#DD615A5A"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/shopitem_edit_wight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0.2226kg"
+                android:textColor="#DD615A5A"
+                android:textSize="38px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_good_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="left|center"
+            android:maxLength="13"
+            android:text="$ 5.00"
+            android:textColor="#b81d23"
+            android:textSize="38px"></TextView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

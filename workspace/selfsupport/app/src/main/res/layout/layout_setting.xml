@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_setting"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout_setting_set"
+        android:layout_width="150dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_shadow_corners_rectangle"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="设置"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#141313"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_setting_print"
+        android:layout_width="150dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_shadow_corners_rectangle"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="重新打印小票"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#141313"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_setting_jieko"
+        android:layout_width="150dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_shadow_corners_rectangle"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="检查更新"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#141313"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/layout_setting_ceshi"
+        android:layout_width="150dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_shadow_corners_rectangle"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#141313"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>

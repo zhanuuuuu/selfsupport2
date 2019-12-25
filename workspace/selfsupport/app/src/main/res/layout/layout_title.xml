@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/comm_title_log"
+        android:layout_marginLeft="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bj"></ImageView>
+
+    <TextView
+        android:id="@+id/comm_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/comm_title_log"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left|center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="xxxx有限公司11111111111111111111111"
+        android:textColor="#DC191A1A"
+        android:textSize="23dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:id="@+id/comm_title_home"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_vip_sure"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_yubiao"></ImageView>
+            <TextView
+                android:id="@+id/tv_home"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:text="首页"
+                android:textSize="13dp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comm_title_return"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_vip_sure"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/return_tubiao"></ImageView>
+            <TextView
+                android:id="@+id/tv_return"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:text="返回"
+                android:textSize="13dp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

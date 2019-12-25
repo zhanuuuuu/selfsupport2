@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent"
+    tools:context=".ui.settingActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--头部-->
+        <include layout="@layout/layout_title"></include>
+
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#FFFFFF"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp">
+
+                <TextView
+                    android:id="@+id/tv_login_number"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Ip地址:"
+                    android:textColor="#333333"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/et_set_ip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_login_number"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入ip地址"
+                    android:text="192.168.11.242:12379"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#5c5c5c"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:listDivider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_set_commitset"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_vip_sure"
+                    android:text="上传机器型号"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_set_upload"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_vip_sure"
+                    android:text="下载配置信息"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_set_lookset"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_vip_sure"
+                    android:text="查看当前的配置信息"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--这里是隐藏的-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/ly_set_hidden"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp">
+
+                            <TextView
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="商品查询地址:"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_selectgoods"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:text="13246"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="#5c5c5c"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?android:listDivider"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp">
+
+                            <TextView
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="更改商品数量地址:"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_updategoods"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:text="123456"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="#5c5c5c"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?android:listDivider"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp">
+
+                            <TextView
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="会员查询地址:"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_vipgoods"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:text="123456"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="#5c5c5c"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?android:listDivider"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp">
+
+                            <TextView
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="删除购物车地址:"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_deletecart"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:text="123456"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="#5c5c5c"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?android:listDivider"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp">
+
+                            <TextView
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="提交购物车地址:"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_commitcart"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:text="123456"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="#5c5c5c"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?android:listDivider"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp">
+
+                            <TextView
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="支付下单地址:"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_payorder"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:text="123456"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="#5c5c5c"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?android:listDivider"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp">
+
+                            <TextView
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="支付查询地址:"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_querypayoder"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:text="123456"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="#5c5c5c"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?android:listDivider"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp">
+
+                            <TextView
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="单据同步地址:"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_sysnorder"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:text="123456"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="#5c5c5c"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?android:listDivider"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp">
+
+                            <TextView
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="检查更新地址:"
+                                android:textColor="#333333"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tv_checkupdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:text="123456"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textColor="#5c5c5c"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="?android:listDivider"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

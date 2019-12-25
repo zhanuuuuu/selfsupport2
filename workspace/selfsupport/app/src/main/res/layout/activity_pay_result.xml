@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent"
+    tools:context=".ui.payResultActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--头部-->
+        <include layout="@layout/layout_title"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/pay_img_success"
+                android:layout_marginTop="150dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/payok" />
+            <TextView
+                android:id="@+id/pay_txt_msg_type"
+                android:paddingTop="30dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="支付成功"
+                android:textStyle="bold"
+                android:textColor="#DFE01717"
+                android:textSize="30dp"
+                android:layout_height="wrap_content">
+            </TextView>
+
+<!--            <TextView-->
+<!--                android:id="@+id/pay_txt_msg_num"-->
+<!--                android:paddingTop="15dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:text="共 3 件商品"-->
+<!--                android:textColor="#4A1A1818"-->
+<!--                android:textSize="12dp"-->
+<!--                android:layout_height="wrap_content">-->
+<!--            </TextView>-->
+
+            <TextView
+                android:id="@+id/pay_txt_msg_money"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="￥ 32.6 元"
+                android:textColor="#DF0F0F0F"
+                android:textStyle="bold"
+                android:textSize="36dp"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pay_btn_return"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textColor="#DDFFFFFF"
+            android:background="@drawable/btn_vip_sure"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_gravity="center"
+            android:textSize="23dp"
+            android:textAllCaps="false"
+            android:text="返回(30s)"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

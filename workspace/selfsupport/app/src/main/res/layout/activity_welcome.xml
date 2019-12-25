@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.welcomeActive">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bj"/>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <Button
+            android:id="@+id/btn_novip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:background="@drawable/vipno_drawable_selector"
+            android:layout_marginRight="10dp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/btn_vip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:background="@drawable/vip_drawable_selector"
+            android:textSize="24dp"
+            >
+        </Button>
+
+    </LinearLayout>
+
+    <!--左上角 隐藏的功能-->
+    <Button
+        android:layout_alignParentRight="true"
+        android:id="@+id/btn_vip_hidder"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:alpha="0.0"
+        >
+    </Button>
+
+    <!--会员 监听 会员扫码的 -->
+    <EditText
+        android:id="@+id/wl_hidden_vip_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+    </EditText>
+
+    <!--版本号信息 -->
+    <TextView
+        android:id="@+id/versionname"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="当前版本号："
+        android:textColor="#1A1818"
+        android:layout_height="wrap_content">
+
+    </TextView>
+</RelativeLayout>

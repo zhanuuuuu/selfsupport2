@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="22px"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="267px">
+        <!--下划线上线-->
+        <LinearLayout
+            android:layout_marginLeft="35px"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="164px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="84px">
+
+                <TextView
+                    android:id="@+id/tv_orderno"
+                    android:textColor="#2C2727"
+                    android:textSize="36px"
+                    android:text="订单编号:12345678945612356"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="left|center"
+                    android:layout_height="match_parent">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="338px"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_allNmber"
+                        android:textColor="#2C2727"
+                        android:textSize="36px"
+                        android:text="总件数: 20 件"
+                        android:layout_width="match_parent"
+                        android:gravity="left|center"
+                        android:layout_height="match_parent">
+                    </TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="84px">
+
+                <TextView
+                    android:textColor="#2C2727"
+                    android:textSize="36px"
+                    android:text="金额: "
+                    android:layout_width="wrap_content"
+                    android:gravity="left|center"
+                    android:layout_height="match_parent">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:textColor="#B60C0C"
+                    android:textSize="36px"
+                    android:text="500.00"
+                    android:layout_width="wrap_content"
+                    android:gravity="left|center"
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:textColor="#2C2727"
+                    android:textSize="36px"
+                    android:text="元"
+                    android:layout_width="wrap_content"
+                    android:gravity="left|center"
+                    android:layout_height="match_parent">
+                </TextView>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="#BEB6B6"
+            android:layout_width="match_parent"
+            android:layout_height="0.3px"></TextView>
+        <LinearLayout
+            android:layout_marginLeft="35px"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="102px">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:textSize="30px"
+                android:text="2019-12-01 10:32:21"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="left|center"
+                android:layout_height="match_parent">
+            </TextView>
+
+            <Button
+                android:id="@+id/bt_print"
+                android:layout_marginRight="37px"
+                android:layout_width="189px"
+                android:layout_height="73px"
+                android:gravity="center"
+                android:textColor="#DDFFFFFF"
+                android:background="@drawable/btn_vip_sure"
+                android:layout_gravity="center"
+                android:textSize="36px"
+                android:textAllCaps="false"
+                android:text="打印"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
